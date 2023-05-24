@@ -1,0 +1,36 @@
+@model aspnet.Models.AddEmployeeViewModel
+
+@{
+    ViewData["Title"] = "Add Page";
+}
+
+<h1>Add Employee</h1>
+
+<form class="mt-2" method="post" action="Add">
+  <div class="mb-3">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" id="" asp-for="Name">
+  </div>
+ 
+   <div class="mb-3">
+    <label for="" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="" asp-for="Email">
+  </div>
+ 
+ <div class="mb-3">
+    <label for="" class="form-label">Salary</label>
+    <input type="number" class="form-control" id="" asp-for="Salary">
+  </div>
+ 
+ <div class="mb-3">
+    <label for="" class="form-label">Department</label>
+    <input type="text" class="form-control" id="" asp-for="Department">
+  </div>
+
+  <div class="mb-3">
+    <label for="" class="form-label">Date of birth</label>
+    <input type="date" class="form-control" id="" asp-for="DataOfBirth">
+  </div>
+
+ <button type="submit" class="btn btn-primary">Submit</button>
+</form>

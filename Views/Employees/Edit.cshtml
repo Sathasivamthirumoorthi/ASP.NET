@@ -1,0 +1,45 @@
+@model aspnet.Models.UpdateEmployeeViewModel
+
+@{
+    ViewData["Title"] = "View Page";
+}
+
+<h1>Edit Employee</h1>
+
+<form class="mt-2" method="post" action="Edit">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" id="" asp-for="Id" readonly>
+    </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" id="" asp-for="Name">
+  </div>
+ 
+   <div class="mb-3">
+    <label for="" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="" asp-for="Email">
+  </div>
+ 
+ <div class="mb-3">
+    <label for="" class="form-label">Salary</label>
+    <input type="number" class="form-control" id="" asp-for="Salary">
+  </div>
+ 
+ <div class="mb-3">
+    <label for="" class="form-label">Department</label>
+    <input type="text" class="form-control" id="" asp-for="Department">
+  </div>
+
+  <div class="mb-3">
+    <label for="" class="form-label">Date of birth</label>
+    <input type="date" class="form-control" id="" asp-for="DataOfBirth">
+  </div>
+
+ <button type="submit" class="btn btn-primary">Submit</button>,
+
+  @* Employees - controller *@
+
+ <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Employees">Delete</button>
+
+</form>
